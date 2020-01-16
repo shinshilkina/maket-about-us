@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+body {
+  background: #323232;
+  height: 100%;
+}
+
+.title{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 2.4em;
+  line-height: 87%;
+
+  margin: 6.2rem 0 0 2.6rem;
+
+  display: flex;
+  align-items: center;
+  //letter-spacing: -0.04em;
+  letter-spacing: -0.015em;
+
+  color: #FFFFFF;
+}
