@@ -1,11 +1,14 @@
 include ../post/post-data
+style
+    include ./card_of_post.scss
+
 
 ul.cards
     each item in locals.dataOfPosts
-        li
+        li.cards__element
             div.cards__item
                 div.cards__item__about-user
-                    div.cards__item__about-user--image
+                    div.cards__item__about-user--image(style='background-image:url(#{require("./userimage.png")})')
                     a.cards__item__about-user--name=item.username
                     a.cards__item__about-user--car=item.userCar
                 div.cards__item__mini-review
