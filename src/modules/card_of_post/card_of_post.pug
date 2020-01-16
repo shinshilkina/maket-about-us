@@ -1,0 +1,11 @@
+ul.cards
+    each item in dataOfPosts
+        li
+            div.cards__item
+                div.cards__item_user
+                    div.cards__item_user--image
+                    a.cards__item_user--name=item.username
+                    a.cards__item_user--car=item.car
+                div.cards__item__mini-review
+                    a.cards__item__mini-review__text
+                button(class="cards__item__see-more")="читать"
