@@ -1,11 +1,13 @@
+include ../post/post-data
+
 ul.cards
-    each item in dataOfPosts
+    each item in locals.dataOfPosts
         li
             div.cards__item
                 div.cards__item__about-user
-                    div.cards__item__about-user--image=item.userImg
+                    div.cards__item__about-user--image
                     a.cards__item__about-user--name=item.username
                     a.cards__item__about-user--car=item.userCar
                 div.cards__item__mini-review
-                    a.cards__item__mini-review__text
-                button(class="cards__item__see-more")="читать"
+                    a.cards__item__mini-review__text=item.review
+                button(class="cards__item__see-more" type="button")="читать"
