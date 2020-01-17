@@ -5,14 +5,16 @@ include ../post/post-data
 ul.cards
     each item in locals.dataOfPosts
         li.cards__element
-            div.cards__item
+            div.cards__item(id=item.id)
                 div.cards__item__about-user
                     div.cards__item__about-user--image
                     div.cards__item__about-user__user
                         a.cards__item__about-user__user-name=item.username
                         br
+
                         a.cards__item__about-user__user-car=item.userCar
                 div.cards__item__mini-review
                     a.cards__item__mini-review__text=item.review
                 div(class="cards__item__see-more" type="button")
-                    a.cards__item__see-more__text-of-button="читать"
+                    a.cards__item__see-more__text-of-button="Читать полный отзыв"
+

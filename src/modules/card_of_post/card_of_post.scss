@@ -7,9 +7,12 @@
   &__item {
     display: inline-block;
     margin-right: 1.35rem;
-    background: #FFFFFF;
+    background: rgb(255, 255, 255);
     border-radius: 5px;
     height: 19rem;
+
+    opacity: 0.5;
+
     &__about-user{
       display: flex;
       word-wrap: break-word;
@@ -34,6 +37,7 @@
         &-car{
           font-weight: 500;
           line-height: 1.6em;
+          color: #A0A0A0;
         }
       }
     }
@@ -73,4 +77,8 @@
       }
     }
   }
+}
+
+.active{
+  opacity: 1;
 }
