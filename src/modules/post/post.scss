@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+.post {
+  display: flex;
+  list-style: none;
+  margin: 2.3rem 0.4rem 0 0.2rem;
+  width: 61.5%;
+
+  &__item {
+      display: inline-block;
+      background: rgb(255, 255, 255);
+      border-radius: 5px;
+      height: 29rem;
+
+      opacity: 1;
+    &:before{
+      
+    }
+      &__user--image {
+        display: flex;
+        float: left;
+        margin: 2rem 1.5rem 20rem 2.2rem;
+        height: 6rem;
+        width: 6rem;
+        background-color: transparent;
+        background-image: url('../post/full_userimage.png');
+        background-repeat: no-repeat;
+      }
+      &__about-user {
+        display: flex;
+        word-wrap: break-word;
+        font-family: Roboto;
+        font-size: 1.38em;
+        line-height: 77%;
+
+        &__user {
+          padding: 1.6rem 1rem 1rem 0;
+          float: right;
+
+          &-name {
+            font-weight: bold;
+            line-height: 1.9rem;
+          }
+
+          &-car {
+            font-size: 0.8em;
+            font-weight: 500;
+            line-height: 83%;
+            color: #A0A0A0;
+          }
+        }
+      }
+
+      &__review {
+        padding: 0.45rem 3rem 1rem 1.55rem;
+
+        &__text {
+          font-family: Roboto;
+          font-size: 0.95em;
+          font-weight: normal;
+          line-height: 127%;
+          display: flex;
+          overflow: hidden;
+          white-space:pre-wrap;
+        }
+      }
+    &__bottom {
+      margin: 1rem auto auto auto;
+      font-family: Roboto;
+      font-size: 0.9em;
+      line-height: 135%;
+      letter-spacing: 0.02em;
+      color: #ABABAB;
+        &__whatsapp-link{
+          color:limegreen;
+        }
+        &__video-link{
+          color: brown;
+        }
+    }
+  }
+
+}
+.post__element{
+  &:nth-child(2){
+    display: none;
+  }
+  &:last-child{
+    display: none;
+  }
+}

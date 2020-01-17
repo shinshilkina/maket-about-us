@@ -1,0 +1,18 @@
+ul.post
+    each item in locals.dataOfPosts
+        li.post__element
+            div.post__item(id=item.id)
+                div.post__item__user--image
+                div.post__item__about-user
+                    div.post__item__about-user__user
+                        a.post__item__about-user__user-name=item.username
+                        br
+                        a.post__item__about-user__user-car=item.userCar
+                div.post__item__review
+                    a.post__item__review__text=item.review
+                div.post__item__bottom
+                    a.post__item__bottom__whatsapp="Cвязаться с Константином в "
+                    a.post__item__bottom__whatsapp-link(href="#")="WhatsApp"
+                    br
+                    a.post__item__bottom__video="Посмотреть "
+                    a.post__item__bottom__video-link(href="#")="видеооотзыв"
