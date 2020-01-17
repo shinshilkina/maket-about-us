@@ -1,32 +1,53 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
 .cards {
   display: flex;
   list-style: none;
-  margin-top: 3rem;
-  &__element{
-
-    margin-right: 5rem;
+  margin: 3rem 0.4rem 0 0.2rem;
+  &__item {
+    display: inline-block;
+    margin-right: 1.35rem;
     background: #FFFFFF;
     border-radius: 5px;
-  }
-
-  &__item {
+    height: 19rem;
     &__about-user{
+      display: flex;
+      word-wrap: break-word;
+      font-family:  Roboto;
+      font-size: 0.94em;
+      line-height: 113%;
       &--image{
-
+        margin: 1.3rem 0.7rem 1rem 1.5rem;
+        height: 3.1rem;
+        width: 3.4rem;
+        background-color: transparent;
+        background-image: url('../post/userimage.png');
+        background-repeat: no-repeat;
       }
-
-      &--name{
-
+      &__user{
+        padding: 1.1rem 1rem 0 0;
+        float: right;
+        line-height: 1.15em;
+        &-name{
+          font-weight: bold;
+        }
+        &-car{
+          font-weight: 500;
+          line-height: 1.6em;
+        }
       }
-      &--car{
-
-      }
-
     }
 
     &__mini-review{
-
+      padding: 0rem 1rem 1rem 1.55rem;
+      height: 8rem;
       &__text{
+        font-family: Roboto;
+        font-size: 0.95em;
+        font-weight: normal;
+        line-height: 127%;
+        display: flex;
+        height: inherit;
         overflow: hidden;
       }
     }
