@@ -2,16 +2,21 @@
 
 .cards {
   display: flex;
+  flex-wrap: wrap;
   list-style: none;
-  margin: 3rem 0.4rem 0 0.2rem;
+  margin: 1.5rem 0.4rem 0 0.2rem;
   &__item {
     display: inline-block;
-    margin-right: 1.35rem;
+    margin: 1.5rem 1.35rem 0 0;
     background: rgb(255, 255, 255);
     border-radius: 5px;
     height: 19rem;
-
+    width: 20.8rem;
     opacity: 0.5;
+
+    &.active {
+      opacity: 1;
+    }
 
     &__about-user{
       display: flex;
@@ -77,8 +82,4 @@
       }
     }
   }
-}
-
-.active{
-  opacity: 1;
 }
